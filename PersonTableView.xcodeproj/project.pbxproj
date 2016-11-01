@@ -14,6 +14,9 @@
 		8A963FD31DC7EAB9004F15B5 /* PersonTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A963FD11DC7EAB9004F15B5 /* PersonTableView.xcdatamodeld */; };
 		8A963FD51DC7EAB9004F15B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A963FD41DC7EAB9004F15B5 /* Assets.xcassets */; };
 		8A963FD81DC7EAB9004F15B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A963FD61DC7EAB9004F15B5 /* LaunchScreen.storyboard */; };
+		8A963FE71DC7EE04004F15B5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A963FE61DC7EE04004F15B5 /* DataManager.m */; };
+		8AE50B851DC8EB4F0013AF44 /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE50B821DC8EB4F0013AF44 /* Person+CoreDataClass.m */; };
+		8AE50B861DC8EB4F0013AF44 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE50B841DC8EB4F0013AF44 /* Person+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		8A963FD41DC7EAB9004F15B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A963FD71DC7EAB9004F15B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A963FD91DC7EAB9004F15B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A963FE51DC7EDC4004F15B5 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		8A963FE61DC7EE04004F15B5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		8AE50B811DC8EB4F0013AF44 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		8AE50B821DC8EB4F0013AF44 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		8AE50B831DC8EB4F0013AF44 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8AE50B841DC8EB4F0013AF44 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,10 @@
 		8A963FC41DC7EAB9004F15B5 /* PersonTableView */ = {
 			isa = PBXGroup;
 			children = (
+				8AE50B811DC8EB4F0013AF44 /* Person+CoreDataClass.h */,
+				8AE50B821DC8EB4F0013AF44 /* Person+CoreDataClass.m */,
+				8AE50B831DC8EB4F0013AF44 /* Person+CoreDataProperties.h */,
+				8AE50B841DC8EB4F0013AF44 /* Person+CoreDataProperties.m */,
 				8A963FC81DC7EAB9004F15B5 /* AppDelegate.h */,
 				8A963FC91DC7EAB9004F15B5 /* AppDelegate.m */,
 				8A963FCB1DC7EAB9004F15B5 /* ViewController.h */,
@@ -70,6 +83,8 @@
 				8A963FD91DC7EAB9004F15B5 /* Info.plist */,
 				8A963FD11DC7EAB9004F15B5 /* PersonTableView.xcdatamodeld */,
 				8A963FC51DC7EAB9004F15B5 /* Supporting Files */,
+				8A963FE51DC7EDC4004F15B5 /* DataManager.h */,
+				8A963FE61DC7EE04004F15B5 /* DataManager.m */,
 			);
 			path = PersonTableView;
 			sourceTree = "<group>";
@@ -153,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE50B851DC8EB4F0013AF44 /* Person+CoreDataClass.m in Sources */,
 				8A963FCD1DC7EAB9004F15B5 /* ViewController.m in Sources */,
 				8A963FCA1DC7EAB9004F15B5 /* AppDelegate.m in Sources */,
+				8A963FE71DC7EE04004F15B5 /* DataManager.m in Sources */,
 				8A963FD31DC7EAB9004F15B5 /* PersonTableView.xcdatamodeld in Sources */,
+				8AE50B861DC8EB4F0013AF44 /* Person+CoreDataProperties.m in Sources */,
 				8A963FC71DC7EAB9004F15B5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GR.PersonTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,6 +310,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GR.PersonTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -313,6 +333,7 @@
 				8A963FDE1DC7EAB9004F15B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

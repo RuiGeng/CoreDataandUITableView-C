@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person+CoreDataProperties.h"
+#import "DataManager.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property(nonatomic,strong)NSMutableArray *mutableArray;
 
 
 @end
